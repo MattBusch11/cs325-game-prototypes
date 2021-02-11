@@ -37,6 +37,7 @@ class MyScene extends Phaser.Scene {
     }
 
     preload() {
+        //All assests save the flask.png are from Phaser. I made the flask png myself.
         this.load.image('sky', 'assets/sky.png');
         this.load.image('ground', 'assets/platform.png');
         this.load.image('star', 'assets/flask.png');
