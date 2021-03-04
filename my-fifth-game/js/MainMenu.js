@@ -1,28 +1,34 @@
-import {Button} from './button.js';
-
 export class MainMenu extends Phaser.Scene {
 
     constructor ()
     {
-      super({key: "MainMenu"};
+      super({key: "MainMenu"});
 	  }
+
+    preload()
+    {
+      this.load.image("sprBtnPlay", "assets/sprBtnPlay.png");
+    }
 
     create()
     {
-      this.scene.start("MyScene");
+      this.title = this.add.text(this.game.config.width * 0.5, 128, "COVID BUSTER", {
+        fontFamil: 'monospace',
+        fontSize: 48,
+        fontStyle: 'bold',
+        color: '#ffffff',
+        align: 'center'
+      });
+      this.title.setOrigin(0.5);
+      this.btnPlay = this.add.sprite(
+        this.game.config.width * 0.5,
+        this.game.config.height * 0.5,
+        "sprBtnPlay"
+      );
+      this.btnPlay.setInteractive();
+      this.btnPlay.on("pointerup", function()
+      {
+        this.scene.start("MyScene");
+      }, this);
     }
-
-    update() {
-        //	Do some nice funky main menu effect here
-    }
-
-    // The callback for the button.
-    startGame() {
-        //	Ok, the Play Button has been clicked or touched, so let's stop the music (otherwise it'll carry on playing)
-        this.music.stop();
-
-        //	And start the actual game
-        this.scene.start( 'Game' );
-    }
-
 }
