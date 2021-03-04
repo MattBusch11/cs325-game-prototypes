@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game invovles running around to collect the Erlenmeyer flasks while avoiding the bombs.
+</li>
+
+<li><strong>Technical Merit:</strong>
+My game is spawning both the bombs and flasks at random locations based ontwo seperate timers. Should the player touch a bomb they will die and the scene will restart.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about javascript and how to set up a scene in phaser as well as creating objects and having them interact.
+The easiest part was loading the assets. The hardest part was finding the methods I needed to do what I wanted.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I made the flask.png asset. The rest were borrowed from the making your first game tutorial on phaser.
+<ul>
+<li>Assets: <a href="http://phaser.io/tutorials/making-your-first-phaser-3-game/part1">Phaser assets</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I followed the making your first game tutorial on phaser which I linked above. I used a lot of that code but I made a good amount of my own as well. Most of the borrowed code involved creating the objects and collisions.
+</li>
+
+<li><strong>High Concept:</strong>
+Collect as much of Chemistry Liquid as you can, but be careful to avoid the bombs!
+</li>
+
+<li><strong>Theme:</strong>
+I used the Chemistry theme.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+I used direct input, a lot of randomness, a collector playstyle, and I would call it a collect-a-thon.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+A Collect-a-thon mechanic.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to have a eild experience dodging the bombs whil collecting as many flasks as they can.
+</li>
+
+<li><strong>Gameplay:</strong>
+They player can only move left and right. You press left and right to move respectively. They must avoid allowiung the bombs to fall into them while attempting to pick up as many of the flasks as they can. Bombs and flask spawn at the top of the screen at a random x at a set interval. bombs spawn faster than flasks.
+</li>
+
+<li><strong>Strategies:</strong>
+Looking ahead of where the bombs are falling and taking your time navigating.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The player is a scientist that must gather ingredients for his latest experiment. But bombs begin raining down and he must avoid them lest his experiment (and life) be concluded.
+This game is fairly simple so there is not much interaction between the dramtic and gameplay tensions.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience of this game is all ages, casual market.
+</li>
+
+<li><strong>Play Time:</strong>
+It can take an average of a couple minutes.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
