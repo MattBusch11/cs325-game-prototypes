@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game takes place on a microscopic level where you fight off COVID-19 virus cells.
+</li>
+
+<li><strong>Technical Merit:</strong>
+I have many enemy objects chasing after the player that will be destroyed by a laser the player can shoot.
+I have iterated on my game by includeing a new class of enemy that shoots as it progresses down the screen.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+This iteration I learned how to set up a shooting enemy.
+The hardest part was integrating this shooting enemy into my code. I had to destroy it properly otherwise there would be a crash.
+The easiest part was setting up the new enemy class since I could base it off of my other one.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I borrowed all assets. The chasing enemies are bombs from Phaser tutorial and the ship, lasers, and shooting enemies were from another site.
+<ul>
+<li>Enemies: <a href="http://phaser.io/tutorials/making-your-first-phaser-3-game/part1">Chasing Enemies</a></li>
+<li>Ship: <a href="http://www.mediafire.com/file/gsymlxluw1eve8n/P3SpaceShooterContent.zip/file">Ship and Laser</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I would say that this game resembles Galaga mostly. I used a tutorial to make this game and some of my code is borrowed from that tutorial.
+<li>Tutorial: <a href="https://learn.yorkcs.com/build-a-space-shooter-with-phaser-3/">Tutorial</a></li>
+
+<li><strong>High Concept:</strong>
+Fight off the deadly COVID-19 Virus cells lest you contract the disease!
+</li>
+
+<li><strong>Theme:</strong>
+I iterated upon a previous game for this assignment.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+I iterated upon a previous game for this assignment.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+A survival shooter mechanic.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I am trying to make the player feel as if they are fighting off impossible odds and surviving for as long as they can.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player can move up, down left, and right by pressing the W, A, S, and D keys respectively. They can also shoot lasers to kill enemies by pressing the spacebar. The player will need to move to both avoid enemies and lasers, and line up shots to kill them. The enemies will spawn at the top of the
+scene and make their way towards the player once the player is within a certain distance or shoot continuously as they progess down the screen. If the player is hit by a laser or enemy the player dies and must start over. The goal is for the player to accrue as many points as they can by shooting enemies.
+Stroy wise the player is fighting off COVID-19 cells and trying to prevent becoming infected.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect kiting the enemies around the player will prove effective at keeping them at a shootable range.
+The addition of shooitng enemies makes this strategy harder because they must dodge the lasers too. Prioritizing shooting enemies could help with this.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The player has just been sprayed from disinfectant onto a surface with COVID-19. The player must eradicate the COVID-19 cells but there are just too many. The player must do its duty to kill as much COVID-19 as they can.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience of this game is all ages, casual market.
+</li>
+
+<li><strong>Play Time:</strong>
+This game will take as long as the player can survive, probably on average a couple minutes or so.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
