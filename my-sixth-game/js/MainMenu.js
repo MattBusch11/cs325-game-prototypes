@@ -20,7 +20,7 @@ export class MainMenu extends Phaser.Scene {
         align: 'center'
       });
       this.title.setOrigin(0.5);
-      this.add.text(16, 16, 'WASD to move and Spacebar to shoot', {fontSize: '32px', fill: '#FFF'});
+      this.add.text(16, 16, 'Arrow keys to move and Spacebar to shoot', {fontSize: '32px', fill: '#FFF'});
       this.btnPlay = this.add.sprite(
         this.game.config.width * 0.5,
         this.game.config.height * 0.5,
