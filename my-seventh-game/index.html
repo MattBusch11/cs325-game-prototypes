@@ -23,18 +23,17 @@ body
 
 <ul>
 <li><strong>Originality:</strong>
-My game takes place on a microscopic level where you fight off COVID-19 virus cells.
+My game is about a lone individual who must survive against encroaching enemies.
 </li>
 
 <li><strong>Technical Merit:</strong>
-I have many enemy objects chasing after the player that will be destroyed by a laser the player can shoot.
-I have iterated on my game by includeing a new class of enemy that shoots as it progresses down the screen.
+I have the player shooting lasers at the mouse location and enemies that shooot at the player. The enemies have distinct movement patterns
+The player can fire two different lasers that destroy either enemy lasers or enemy units.
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-This iteration I learned how to set up a shooting enemy.
-The hardest part was integrating this shooting enemy into my code. I had to destroy it properly otherwise there would be a crash.
-The easiest part was setting up the new enemy class since I could base it off of my other one.
+This iteration I learned how to implement mouse input and targeted movement.
+The hardest part was figuring out how to get the lasers to shoot at the mouse location.
 </li>
 
 <li><strong>Prototype Assets:</strong>
@@ -46,11 +45,11 @@ I borrowed all assets. The chasing enemies are bombs from Phaser tutorial and th
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-I would say that this game resembles Galaga mostly. I used a tutorial to make this game and some of my code is borrowed from that tutorial.
+I would say this game is closest to asteroids. I turned a previous game I made into the prototype for this one.
 <li>Tutorial: <a href="https://learn.yorkcs.com/build-a-space-shooter-with-phaser-3/">Tutorial</a></li>
 
 <li><strong>High Concept:</strong>
-Fight off the deadly COVID-19 Virus cells lest you contract the disease!
+Fight off hoardes of enemies encroaching on your position!
 </li>
 
 <li><strong>Theme:</strong>
@@ -70,18 +69,17 @@ I am trying to make the player feel as if they are fighting off impossible odds 
 </li>
 
 <li><strong>Gameplay:</strong>
-The player can move up, down left, and right by pressing the W, A, S, and D keys respectively. They can also shoot lasers to kill enemies by pressing the spacebar. The player will need to move to both avoid enemies and lasers, and line up shots to kill them. The enemies will spawn at the top of the
-scene and make their way towards the player once the player is within a certain distance or shoot continuously as they progess down the screen. If the player is hit by a laser or enemy the player dies and must start over. The goal is for the player to accrue as many points as they can by shooting enemies.
-Stroy wise the player is fighting off COVID-19 cells and trying to prevent becoming infected.
+The player can shoot lasers to kill enemies and enemy lasers by clicking left or right mouse button. The player will need to shoot blue lasers to destroy enemies and red lasers to destroy enemy lasers. The enemies will spawn
+on the edges of the screen and make their way towards the player and shoot continuously as they progess. If the player is hit by a laser or enemy the player dies and must start over. The goal is for the player to accrue as many points as they can by shooting enemies.
+
 </li>
 
 <li><strong>Strategies:</strong>
-I expect kiting the enemies around the player will prove effective at keeping them at a shootable range.
-The addition of shooitng enemies makes this strategy harder because they must dodge the lasers too. Prioritizing shooting enemies could help with this.
+The player will need to keep careful stock of both the enemy lasers and enemies themselves. Prioritsing targets will be the best way of surviving. Shoot enemies to decrease the amount of lasers being fired.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
-The player has just been sprayed from disinfectant onto a surface with COVID-19. The player must eradicate the COVID-19 cells but there are just too many. The player must do its duty to kill as much COVID-19 as they can.
+The player must survive against an onslaught of enemies trying to kill them.
 </li>
 
 <li><strong>Target Audience:</strong>
