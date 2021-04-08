@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game is about a lone individual who must survive against encroaching enemies.
+</li>
+
+<li><strong>Technical Merit:</strong>
+I have the player shooting lasers at the mouse location and enemies that shooot at the player. The enemies have distinct movement patterns
+The player can fire two different lasers that destroy either enemy lasers or enemy units.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+This iteration I learned how to implement mouse input and targeted movement.
+The hardest part was figuring out how to get the lasers to shoot at the mouse location.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I borrowed all assets. The chasing enemies are bombs from Phaser tutorial and the ship, lasers, and shooting enemies were from another site.
+<ul>
+<li>Enemies: <a href="http://phaser.io/tutorials/making-your-first-phaser-3-game/part1">Chasing Enemies</a></li>
+<li>Ship: <a href="http://www.mediafire.com/file/gsymlxluw1eve8n/P3SpaceShooterContent.zip/file">Ship and Laser</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+For this iteration I added a new enemy with a new movement pattern, increased player laser speeds, reduced enemy fire and spawn rates.
+<li>Tutorial: <a href="https://learn.yorkcs.com/build-a-space-shooter-with-phaser-3/">Tutorial</a></li>
+
+<li><strong>High Concept:</strong>
+Fight off hoardes of enemies encroaching on your position!
+</li>
+
+<li><strong>Theme:</strong>
+I iterated upon a previous game for this assignment.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+I iterated upon a previous game for this assignment.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+A survival shooter mechanic.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I am trying to make the player feel as if they are fighting off impossible odds and surviving for as long as they can.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player can shoot lasers to kill enemies and enemy lasers by clicking left or right mouse button. The player will need to shoot blue lasers to destroy enemies and red lasers to destroy enemy lasers. The enemies will spawn
+on the edges of the screen and make their way towards the player and shoot continuously as they progess. If the player is hit by a laser or enemy the player dies and must start over. The goal is for the player to accrue as many points as they can by shooting enemies.
+
+</li>
+
+<li><strong>Strategies:</strong>
+The player will need to keep careful stock of both the enemy lasers and enemies themselves. Prioritsing targets will be the best way of surviving. Shoot enemies to decrease the amount of lasers being fired.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The player must survive against an onslaught of enemies trying to kill them.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience of this game is all ages, casual market.
+</li>
+
+<li><strong>Play Time:</strong>
+This game will take as long as the player can survive, probably on average a couple minutes or so.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
