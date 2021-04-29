@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static float timer = 0f;
+    public static bool playerDead = false;
     //private float startTimer = 0f;
     //public bool gameStarted;
     // Start is called before the first frame update
@@ -20,12 +21,8 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             timer = 0f;
+            playerDead = false;
             //gameStarted = false;
         }
-        else
-        {
-            timer += Time.deltaTime;
-        }
-        
     }
 }

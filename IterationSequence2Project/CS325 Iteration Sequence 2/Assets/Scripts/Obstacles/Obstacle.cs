@@ -24,6 +24,7 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GameManager.playerDead = true;
             Destroy(collision.gameObject);
             sceneFader.GetComponent<Animator>().SetTrigger("EndGame");
         }

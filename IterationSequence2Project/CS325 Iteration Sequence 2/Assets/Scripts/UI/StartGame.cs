@@ -22,5 +22,6 @@ public class StartGame : MonoBehaviour
     public void TransitionScene()
     {
         sceneFader.SetActive(true);
+        GameManager.timer = 0;
     }
 }

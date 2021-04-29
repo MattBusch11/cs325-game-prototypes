@@ -7,6 +7,7 @@ public class ScoreTracker : MonoBehaviour
 {
     void Update()
     {
+        GameManager.timer += Time.deltaTime;
         GetComponent<Text>().text = "Score: " + (int)GameManager.timer;
     }
 }
