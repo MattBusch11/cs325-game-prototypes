@@ -22,7 +22,8 @@ public class EnemySpawner : MonoBehaviour
     public void SpawnEnemy()
     {
         Vector2 pos = center + new Vector2(Random.Range(-size.x / 2, size.x / 2), (Random.Range(-size.y / 2, size.y / 2)));
-        Instantiate(enemyToSpawn, pos, Quaternion.identity);
+        Enemy enemy = Instantiate(enemyToSpawn, pos, Quaternion.identity);
+        enemy.spawner = this;
         enemySpawned = true;
     }
 
@@ -53,8 +54,10 @@ public class EnemySpawner : MonoBehaviour
         if (timer >= timerInterval)
         {
             if (!enemySpawned)
-            SpawnEnemy();
-            timer = 0f;
+            {
+                SpawnEnemy();
+                timer = 0f;
+            }
         }
         else
         {

@@ -1206,7 +1206,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use WASD or Arrow Keys to move the ship, avoid the Obstacles
+  m_Text: 'Use WASD or Arrow Keys to move the ship, avoid the Obstacles
+
+    Use
+    the Spacebar to fire a cannon ball straight ahead, destroy any pirates you encounter'
 --- !u!222 &1999827723
 CanvasRenderer:
   m_ObjectHideFlags: 0
